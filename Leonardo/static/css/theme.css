@@ -1,0 +1,36 @@
+
+p#style1 {
+    color:#03346;
+
+}
+
+h1#style1 {
+    font-size: 50pt;
+    color:#fff;
+    font-weight: lighter;
+}
+.jumbotron { background:url("/static/image/main_leo.png") center no-repeat; background-size: cover;}
+
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+.inner {
+
+    border:0;
+    padding:10px;
+    font-size:10pt;
+    font-family:Arial, sans-serif;
+    color:#777;
+    border:solid 1px #ccc;
+    margin:0 0 20px;
+    width:600px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

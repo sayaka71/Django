@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 id = "style1">Edit</h1><br>
+    <p id = 'style1' class="lead">Live a productive and prosperous life!</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<p>
+<form class='inner' action='', method='POST'>{% csrf_token%}
+    title: {{ form.title }}<br><br>
+    memo: {{ form.memo }}<br>
+    priority: {{ form.priority }}<br>
+    duedate: {{ form.duedate }}<br>
+    <input type="submit" value="update">
+</form>
+</p>
+</div>
+{% endblock content %}

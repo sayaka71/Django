@@ -1,0 +1,26 @@
+
+
+{% extends 'base.html' %}
+
+
+{% block header %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 id = "style1">Create New List</h1><br>
+    <p id = 'style1' class="lead">Live a productive and prosperous life!</p>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<br>
+<div class="container">
+
+<form class='inner' action="" method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Create">
+</form>
+
+</div>
+{% endblock content %}
